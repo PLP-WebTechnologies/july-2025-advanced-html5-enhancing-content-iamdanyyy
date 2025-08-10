@@ -5,12 +5,13 @@
     </head>
     <body>
         <section id="introduction">
-            <h1>1. Introduction</h1>
+            <h1>Balanced Diet - Your Guide to Living Healthy</h1>
+            <h2>1. Introduction</h2>
             <p>A balanced diet is essential for maintaining good health and well-being. It provides the necessary nutrients your body needs to function effectively. It comprises of carbohydrates, proteins, fats, vitamins, minerals, and plenty of water.</p>
         </section>
 
         <section id="food-groups">
-            <h1>2. The Food Groups</h1>
+            <h2>2. The Food Groups</h2>
             <p>Understanding the different food groups is crucial for creating a balanced diet. The main food groups include:</p>
             <ol>
                 <li><strong>Carbohydrates:</strong> Provide energy and should make up about 45-65% of your daily intake.</li>
@@ -18,11 +19,11 @@
                 <li><strong>Fats:</strong> Necessary for hormone production and nutrient absorption, comprising 20-35% of your intake.</li>
                 <li><strong>Vitamins and Minerals:</strong> Vital for various bodily functions, these should be consumed in adequate amounts.</li>
                 <li><strong>Water:</strong> Essential for life, aim for at least 8 cups a day.</li>
-            </ul>
+            </ol>
         </section>
 
         <section id="tips-for-balanced-diet">
-            <h1>3. Tips for a Balanced Diet</h1>
+            <h2>3. Tips for a Balanced Diet</h2>
             <ul  type="circle">
                 <li>Incorporate a variety of foods from all food groups.</li>
                 <li>Control portion sizes to avoid overeating.</li>
@@ -33,7 +34,7 @@
         </section>
 
         <section id="recommended-intake-table">
-            <h1>4. Recommended Daily Intake Table</h1>
+            <h2>4. Recommended Daily Intake Table</h2>
             <table border="1">
                 <tr>
                     <th>Food Group</th>
@@ -75,26 +76,108 @@
         </section>
 
         <section>
-            <h1>5. Example of a Healthy Meal</h1>
+            <h2>5. Example of a Healthy Meal</h2>
             <p>Here’s an example of a balanced meal:</p>
-            <img src="assets/balanced-diet.jpeg" alt="Healthy Meal" style="width:300px;height:200px;">
+            <img src="assets/balanced-diet.jpeg" alt="Grilled chicken salad with soft-boiled eggs, cherry tomatoes, and fresh lettuce." style="width:300px;height:200px;">
+            <p>This meal includes lean protein, healthy fats, and plenty of vegetables.</p>
         </section>
 
         <section>
-            <video src="assets/Screen Recording 2025-07-30 212000.mp4" controls height="200px"></video>
+            <h2>6. Educational Video</h2>
+            <p>Watch this video to learn more about balanced diets:</p>
+            <video src="assets/A Balanced Diet Understanding Food Groups And Healthy Eating Nutritionist Explains Myprotein.mp4" controls height="200px"></video>
+            <p>Educational Video on Balanced Diet</p>
         </section>
+
+        <section>
+            <h2>7. Educational Audio</h2>
+            <audio src="assets/healthy-eating.mp3" controls alt="Healthy Eating Audio"></audio>
+        </section>
+        <br>
+
         <section id="interactive-form">
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2>7. Interactive Form</h2>
+            <form action="#" method="post" autocomplete="on">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <fieldset>
+                    <legend>Personal Details</legend>
 
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Alice Kamau" required minlength="3" maxlength="50">
+                    <br><br>
 
-                <input type="submit" value="Submit">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="alicek@gmail.com" required>
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required max="2025-08-10">
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 712345678" pattern="\+?[0-9]{10,15}" required>
+                    <small>Format: +[country code][number], e.g., +254712345678 (no spaces)</small>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Dietary Preferences</legend>
+
+                    <label for="plan">Plan ID:</label>
+                    <input type="text" id="plan" name="plan" value="HD-2025" readonly>
+                    <br><br>
+
+                    <label for="diet">Preferred Diet Type:</label>
+                    <select id="diet" name="diet" required>
+                        <option value="">--Select--</option>
+                        <option value="balanced">Balanced Diet</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="lowcarb">Low-Carb</option>
+                    </select>
+                    <br><br>
+
+                    <p>Favorite Food Groups:</p>
+                    <input type="checkbox" id="fruits" name="foodgroup" value="fruits">
+                    <label for="fruits">Fruits</label>
+
+                    <input type="checkbox" id="vegetables" name="foodgroup" value="vegetables">
+                    <label for="vegetables">Vegetables</label>
+
+                    <input type="checkbox" id="protein" name="foodgroup" value="protein">
+                    <label for="protein">Protein</label>
+
+                    <input type="checkbox" id="carbs" name="foodgroup" value="carbs">
+                    <label for="carbs">Carbohydrates</label>
+
+                    <input type="checkbox" id="fats" name="foodgroup" value="fats">
+                    <label for="fats">Healthy Fats</label>
+                    <br><br>
+
+                    <label for="allergies">Food Allergies:</label>
+                    <textarea id="allergies" name="allergies" rows="3" cols="30" placeholder="List any food allergies" maxlength="100"></textarea>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Health Goals</legend>
+                    <input type="radio" id="weightloss" name="goal" value="weightloss" required>
+                    <label for="weightloss">Weight Loss</label><br>
+
+                    <input type="radio" id="muscle" name="goal" value="muscle" required>
+                    <label for="muscle">Build Muscle</label><br>
+
+                    <input type="radio" id="energy" name="goal" value="energy" required>
+                    <label for="energy">Increase Energy</label><br>
+
+                    <input type="radio" id="health" name="goal" value="health" required>
+                    <label for="health">Overall Health</label>
+                </fieldset>
+                <br>
+
+                <input type="submit" value="Submit Plan">
+                <input type="reset" value="Clear Form">
+
             </form>
         </section>
     </body>
